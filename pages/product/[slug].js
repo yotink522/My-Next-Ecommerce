@@ -13,7 +13,6 @@ import {
 import { useRouter } from 'next/router';
 import data from '../../utils/data';
 import Layout from '../../components/Layout';
-import { mergeClasses } from '@material-ui/styles';
 import useStyles from '../../utils/styles';
 
 export default function ProductScreen() {
