@@ -2,6 +2,7 @@ import Cookies from 'js-cookie';
 import { createContext, useReducer } from 'react';
 
 export const Store = createContext();
+//console.log(JSON.parse(Cookies.get('userInfo')));
 const initialState = {
   darkMode: Cookies.get('darkMode') === 'ON' ? true : false,
   cart: {
