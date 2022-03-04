@@ -7,6 +7,7 @@ import {
   Toolbar,
   Container,
   Link,
+  createTheme,
   ThemeProvider,
   CssBaseline,
   Switch,
@@ -16,7 +17,7 @@ import {
   MenuItem,
 } from '@material-ui/core';
 
-import { createTheme } from '@material-ui/core';
+//import { createTheme } from '@material-ui/core';
 import useStyles from '../utils/styles';
 import { Store } from '../utils/Store';
 import Cookies from 'js-cookie';
