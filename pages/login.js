@@ -7,7 +7,7 @@ import {
   Link,
 } from '@material-ui/core';
 import NextLink from 'next/link';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
 import useStyles from '../utils/styles';
@@ -124,7 +124,7 @@ export default function Login() {
             </Button>
           </ListItem>
           <ListItem>
-            Dont have an account? &nbsp;
+            Don&apos;t have an account? &nbsp;
             <NextLink href={`/register?redirect=${redirect || '/'}`} passHref>
               <Link>Register</Link>
             </NextLink>
