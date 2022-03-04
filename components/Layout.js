@@ -51,10 +51,14 @@ export default function Layout({ title, description, children }) {
         main: '#208080',
       },
     },
+    empty: {
+      color: 'inherit',
+    },
   });
 
   const classes = useStyles();
   const darkModeChangeHandler = () => {
+    console.log('change');
     dispatch({ type: darkMode ? 'DARK_MODE_OFF' : 'DARK_MODE_ON' });
     const newDarkMode = !darkMode;
     Cookies.set('darkMode', newDarkMode ? 'ON' : 'OFF');
